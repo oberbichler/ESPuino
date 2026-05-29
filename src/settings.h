@@ -112,35 +112,35 @@
 		If you don't want to assign an action or you don't use a given button: CMD_NOTHING has to be set
 	*/
 	// *****BUTTON*****        *****ACTION*****
-	#define BUTTON_0_SHORT    CMD_NEXTTRACK
-	#define BUTTON_1_SHORT    CMD_PREVTRACK
-	#define BUTTON_2_SHORT    CMD_PLAYPAUSE
-	#define BUTTON_3_SHORT    CMD_MEASUREBATTERY
-	#define BUTTON_4_SHORT    CMD_SEEK_BACKWARDS
-	#define BUTTON_5_SHORT    CMD_SEEK_FORWARDS
+	#define BUTTON_0_SHORT    CMD_NEXTTRACK         // gelb2
+	#define BUTTON_1_SHORT    CMD_PREVTRACK         // gelb1
+	#define BUTTON_2_SHORT    CMD_PLAYPAUSE         // rot
+	#define BUTTON_3_SHORT    CMD_MEASUREBATTERY    // drehknopf
+	#define BUTTON_4_SHORT    CMD_SEEK_BACKWARDS    // grün1
+	#define BUTTON_5_SHORT    CMD_SEEK_FORWARDS     // grün2
 
-	#define BUTTON_0_LONG     CMD_LASTTRACK
-	#define BUTTON_1_LONG     CMD_FIRSTTRACK
-	#define BUTTON_2_LONG     CMD_PLAYPAUSE
-	#define BUTTON_3_LONG     CMD_SLEEPMODE
-	#define BUTTON_4_LONG     CMD_VOLUMEUP
-	#define BUTTON_5_LONG     CMD_VOLUMEDOWN
+	#define BUTTON_0_LONG     CMD_NOTHING           // gelb2
+	#define BUTTON_1_LONG     CMD_NOTHING           // gelb1
+	#define BUTTON_2_LONG     CMD_PLAYPAUSE         // rot
+	#define BUTTON_3_LONG     CMD_SLEEPMODE         // drehknopf
+	#define BUTTON_4_LONG     CMD_SEEK_BACKWARDS    // grün1
+	#define BUTTON_5_LONG     CMD_SEEK_FORWARDS     // grün2
 
-	#define BUTTON_MULTI_01   CMD_NOTHING   //CMD_TOGGLE_WIFI_STATUS (disabled now to prevent children from unwanted WiFi-disable)
-	#define BUTTON_MULTI_02   CMD_ENABLE_FTP_SERVER
-	#define BUTTON_MULTI_03   CMD_NOTHING
-	#define BUTTON_MULTI_04   CMD_NOTHING
-	#define BUTTON_MULTI_05   CMD_NOTHING
-	#define BUTTON_MULTI_12   CMD_TELL_IP_ADDRESS
-	#define BUTTON_MULTI_13   CMD_NOTHING
-	#define BUTTON_MULTI_14   CMD_NOTHING
-	#define BUTTON_MULTI_15   CMD_NOTHING
-	#define BUTTON_MULTI_23   CMD_NOTHING
-	#define BUTTON_MULTI_24   CMD_NOTHING
-	#define BUTTON_MULTI_25   CMD_NOTHING
-	#define BUTTON_MULTI_34   CMD_NOTHING
-	#define BUTTON_MULTI_35   CMD_NOTHING
-	#define BUTTON_MULTI_45   CMD_NOTHING
+	#define BUTTON_MULTI_01   CMD_NOTHING           // gelb2 gelb1 //CMD_TOGGLE_WIFI_STATUS (disabled now to prevent children from unwanted WiFi-disable)
+	#define BUTTON_MULTI_02   CMD_NOTHING           // gelb2 rot
+	#define BUTTON_MULTI_03   CMD_NOTHING           // gelb2 drehknopf
+	#define BUTTON_MULTI_04   CMD_NOTHING           // gelb2 grün1
+	#define BUTTON_MULTI_05   CMD_NOTHING           // gelb2 grün2
+	#define BUTTON_MULTI_12   CMD_NOTHING   // gelb1 rot
+	#define BUTTON_MULTI_13   CMD_ENABLE_FTP_SERVER           // gelb1 drehknopf
+	#define BUTTON_MULTI_14   CMD_NOTHING           // gelb1 grün1
+	#define BUTTON_MULTI_15   CMD_NOTHING           // gelb1 grün2
+	#define BUTTON_MULTI_23   CMD_TOGGLE_BLUETOOTH_SINK_MODE           // rot drehknopf
+	#define BUTTON_MULTI_24   CMD_NOTHING           // rot grün1
+	#define BUTTON_MULTI_25   CMD_NOTHING           // rot grün2
+	#define BUTTON_MULTI_34   CMD_NOTHING           // drehknopf grün1
+	#define BUTTON_MULTI_35   CMD_TELL_IP_ADDRESS           // drehknopf grün2
+	#define BUTTON_MULTI_45   CMD_NOTHING           // grün1 grün2
 
 	//#################### Various settings ##############################
 

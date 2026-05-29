@@ -290,7 +290,8 @@ static void Button_HandleSinglePress(uint8_t i, unsigned long currentTimestamp) 
 	}
 
 	// Handle volume buttons with repeat functionality
-	if (Cmd_Long == CMD_VOLUMEUP || Cmd_Long == CMD_VOLUMEDOWN) {
+	if (Cmd_Long == CMD_VOLUMEUP || Cmd_Long == CMD_VOLUMEDOWN || // volume-buttons
+		Cmd_Long == CMD_SEEK_FORWARDS || Cmd_Long == CMD_SEEK_BACKWARDS) { // seek-buttons
 		if (pressDuration <= intervalToLongPress) {
 			return;
 		}
